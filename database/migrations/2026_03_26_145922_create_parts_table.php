@@ -17,8 +17,6 @@ return new class extends Migration
         $table->string('category');
         $table->text('description')->nullable();
         $table->string('image');
-        // Compatibility fields
-        $table->json('compatibility')->nullable(); // Stores requirements like min_speeds, max_speeds, frame_type, etc.
         $table->timestamps();
     });
     }
